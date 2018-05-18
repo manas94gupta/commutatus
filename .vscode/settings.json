@@ -1,0 +1,7 @@
+{
+  // prettier & eslint
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "prettier.disableLanguages": ["js"]
+}
