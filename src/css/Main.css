@@ -1,0 +1,104 @@
+.main {
+    max-width: 480px;
+    margin: 70px auto 10px;
+}
+
+.main__hero {
+    justify-content: center;
+    padding: 0 5px 35px;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.main__hero-pic {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+    box-shadow: 0 0 15px #afafaf;
+}
+
+@media screen and (max-width: 425px) {
+    .main__hero-pic {
+        display: none;
+    }
+}
+
+.main__hero-content {
+    justify-content: flex-end;
+    flex-basis: 295px;
+    margin-bottom: 4px;
+}
+
+.main__hero-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.main__hero-organisation {
+    margin: 10px 0;
+}
+
+.main__hero-org-name {
+    font-weight: bold;
+    color: rgba(71, 107, 175, 1);
+    margin-right: 10px;
+}
+
+.main__hero-tags-wrapper {
+    flex-wrap: wrap;
+}
+
+.main_hero-tag {
+    color: rgba(71, 107, 175, 1);
+    background: rgba(71, 107, 175, 0.2);
+    padding: 3px 10px;
+    margin-right: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.main__body-wrapper {
+    padding: 15px 0;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.main__body {
+    padding: 0 35px;
+}
+
+@media screen and (max-width: 425px) {
+    .main__body {
+        padding: 0 15px;
+    }
+}
+
+.main__body-section {
+    margin-bottom: 10px;
+}
+
+.main__body-head {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.main__body-background-item:not(:last-of-type)::after {
+    content: ", ";
+}
+
+.main__body-map img {
+    width: 100%;
+}
+
+.main__footer {
+    padding: 20px 10px;
+}
+
+.main__footer-section {
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .main__footer-section {
+        max-width: 85px;
+    }
+}
