@@ -19,6 +19,7 @@ const validate = ({
 
     // errors
     const reqError = "This field is required";
+    const titleError = "Cannot be more than 100 characters";
     const backgroundsError = "Maximum 3 backgrounds can be set";
     const appCloseMinError = "Cannot be less than 30 days from current date";
     const appCloseMaxError = "Cannot be more than 90 days from current date";
@@ -26,6 +27,10 @@ const validate = ({
 
     if (!title) {
         errors.title = reqError;
+        hasErrors = true;
+    }
+    if (title && title.length > 100) {
+        errors.title = titleError;
         hasErrors = true;
     }
 
